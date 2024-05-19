@@ -16,7 +16,7 @@
 
 """
 
-import cv2 as cv
+import cv2 as cv # openCV
 
 qrcode = cv.QRCodeDetector()
 cap = cv.VideoCapture(0)
