@@ -1,3 +1,21 @@
+"""
+--------------------------------------------------------------------------
+-*- coding: utf-8 -*-                    created on friday, May, 10, 2024
+
+@author: Phuoc Loi Tran
+@student code: 2101076 (from C.T.U.T)
+@github: Loitranph (https://github.com/Loitranph)
+@discr|pt|on: Scan QR codes using computer vision
+@using:
+  software:
+            python:
+                    version: 3.10.7
+                    lib: openCV
+
+-----------------------------------------------------------------------------
+
+"""
+
 import cv2 as cv
 
 qrcode = cv.QRCodeDetector()
