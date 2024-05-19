@@ -16,7 +16,8 @@
 
 """
 
-import cv2 as cv # openCV
+import cv2 as cv
+# import webbrowser # open link
 
 qrcode = cv.QRCodeDetector()
 cap = cv.VideoCapture(0)
@@ -30,6 +31,7 @@ while True:
                 if s:
                     cv.putText(frame, s, (100, 100), cv.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 1, cv.LINE_AA)
                     print(s)
+                    # webbrowser.open(s)  # Go to link
                 else:
                     pass
                 frame = cv.polylines(frame, [p.astype(int)], True, (0, 255, 0), 8)
